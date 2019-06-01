@@ -8,20 +8,22 @@ int main() {
     cin >> x;
     cin >> opcao;
     cin >> y;
+    cout << "= ";
     switch (opcao) {
       case '+':
-      cout << "= " << x+y  << endl << endl;
+        cout << x+y << endl;
       break;
       case '-':
-      cout << "= " << x-y  << endl << endl ;
+        cout << x-y << endl;
       break;
       case '*':
-      cout << "= " << x*y  << endl << endl ;
+        cout << x*y << endl;
       break;
       case '/':
-      cout << "= " << x/y  << endl << endl ;
+        cout << x/y << endl;
       break;
     }
+    cout << endl;
   } while(opcao == '+' || opcao == '-' || opcao == '*' || opcao == '/');
   return 0;
 }
